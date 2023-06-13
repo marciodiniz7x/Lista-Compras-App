@@ -19,7 +19,22 @@ body {
 }
 
 .table-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     border: 1px solid;
     width: 500px;
     height: 600px;
 }
+
+.table {
+
+    padding: 10px;
+
+}
+
+th, td {
+    border: 1px solid;
+    padding: 8px;
+}
+
