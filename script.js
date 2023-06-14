@@ -13,13 +13,3 @@ var priceInput = document.getElementById('priceInput');
 
     event.target.value = cents ? reais + ',' + cents : '';
 });
-
-
-const table = document.querySelector('.produtos');
-table.appendChild(produtoLinha);
-
-function gerarLinha() {
-    alert('Linha gerada');
-    const table = document.querySelector('.table');
-    table.appendChild(produtoLinha);
-}

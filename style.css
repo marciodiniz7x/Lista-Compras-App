@@ -67,6 +67,10 @@ th {
     justify-content: center;
 }
 
+.produtos {
+    border: 1px solid;
+}
+
 .add-produto {
     display: flex;
     align-items: center;
