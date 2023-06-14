@@ -15,15 +15,6 @@ var priceInput = document.getElementById('priceInput');
     event.target.value = cents ? reais + ',' + cents : '';
 });
 
-// Adiciona e remove produtos
-addProduto.addEventListener('click', () => {
-    alert('Adicionou');
-});
-
-removeProduto.addEventListener('click', () => {
-    alert('Removeu');
-});
-
 // Criar o elemento <tr>
 const tr = document.createElement('tr');
 
@@ -78,7 +69,17 @@ tr.appendChild(tdCheckbox);
 
 // Adicionar o elemento <tr> ao elemento pai (por exemplo, uma tabela)
 const parentElement = document.querySelector('.table');
-parentElement.appendChild(tr);
+
+
+// Adiciona e remove produtos
+addProduto.addEventListener('click', () => {
+    parentElement.appendChildChild(tr);
+});
+
+removeProduto.addEventListener('click', () => {
+    parentElement.removeChild(tr);
+});
+
 
 
 
