@@ -83,11 +83,10 @@ th {
     display: flex;
     align-items: center;
     padding: 8px;
-    color: white;
-    background-color: #b14d6e;
+    color: #a72844;;
     gap: 3px;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.5em;
+
     border: none;
     border-radius: 5px;
     cursor: pointer;
