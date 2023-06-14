@@ -1,7 +1,9 @@
 const produtos = document.querySelector('.produtos');
-const addProduto = document.querySelector('.add-produto');
 const produtoLinha = document.querySelector('.produto-linha');
 const linhaDinamica = document.querySelector('.linha-dinamica');
+
+const addProduto = document.querySelector('.add-produto');
+const removeProduto = document.querySelector('.remove-produto');
 
 // Adiciona preços
 var priceInput = document.getElementById('priceInput');
@@ -13,3 +15,15 @@ var priceInput = document.getElementById('priceInput');
 
     event.target.value = cents ? reais + ',' + cents : '';
 });
+
+// Adiciona e remove produtos
+addProduto.addEventListener('click', () => {
+    alert('Adicionou');
+})
+
+removeProduto.addEventListener('click', () => {
+    alert('Removeu');
+})
+
+
+

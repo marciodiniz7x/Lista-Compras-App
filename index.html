@@ -24,7 +24,6 @@
 
             <thead class="thead">
                 <tr>
-                    <th>-</th>
                     <th>Produto</th>
                     <th>Qtd</th>
                     <th>Preço (R$)</th>
@@ -37,11 +36,7 @@
 
                     <div class="produto-linha">
                         <tr>
-                            <td>
-                                <span class="material-symbols-outlined remove-produto">
-                                    remove_circle
-                                </span>
-                            </td>
+                            
                             <td>
                                 <input type="text" name="text" class="input-produto" placeholder="Digite o nome..." maxlength="18">
                             </td>
@@ -64,11 +59,6 @@
 
                     <div class="produto-linha">
                         <tr>
-                            <td>
-                                <span class="material-symbols-outlined remove-produto">
-                                    remove_circle
-                                </span>
-                            </td>
                             <td>
                                 <input type="text" name="text" class="input-produto" placeholder="Digite o nome..." maxlength="18">
                             </td>
@@ -91,11 +81,6 @@
                     <div class="produto-linha">
                         <tr>
                             <td>
-                                <span class="material-symbols-outlined remove-produto">
-                                    remove_circle
-                                </span>
-                            </td>
-                            <td>
                                 <input type="text" name="text" class="input-produto" placeholder="Digite o nome..." maxlength="18">
                             </td>
                             <td>
@@ -116,9 +101,7 @@
                     </div>
                     <tr>
                         <td>
-                            <span onclick="gerarLinha()" class="material-symbols-outlined add-produto">
-                                add_circle
-                            </span>
+                            
                         </td>
                         <td></td>
                         <td></td>
@@ -136,7 +119,14 @@
             <!-- Linha 3 -->
             
         </table>
-        
+        <div class="botoes">
+            <span onclick="gerarLinha()" class="material-symbols-outlined add-produto">
+                add_circle
+            </span>
+            <span class="material-symbols-outlined remove-produto">
+                remove_circle
+            </span>
+        </div>
     </div>
 </body>
 </html>
