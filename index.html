@@ -7,6 +7,10 @@
     <!-- Material Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Biblioteca autoNumeric -->
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.9.0/dist/autoNumeric.min.js" integrity="sha256-T7YLdyAxufSse+BvXKbF4q4cEuPi4NyQiSxNRFz5OPY=" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Document</title>
@@ -38,9 +42,17 @@
                                     remove_circle
                                 </span>
                             </td>
-                            <td>Feijão</td>
-                            <td>3</td>
-                            <td>8,50</td>
+                            <td>
+                                <input type="text" name="text" class="input-produto" placeholder="Digite o nome..." maxlength="18">
+                            </td>
+                            <td>
+                                <input type="number" name="number" class="input-qtd" placeholder="0" min="0">
+                            </td>
+                            <td>
+                                <input type="text" class="input-price" id="priceInput" oninput="formatPrice(this)" maxlength="10"
+                                placeholder="0,01">
+
+                            </td>
                             <td>
                                 <label class="container">
                                 <input type="checkbox" checked="checked">
@@ -55,9 +67,16 @@
                                 remove_circle
                             </span>
                         </td>
-                        <td>Arroz</td>
-                        <td>5</td>
-                        <td>4,50</td>
+                        <td>
+                            <input type="text" name="text" class="input-produto" placeholder="Digite o nome..." maxlength="18">
+                        </td>
+                        <td>
+                            <input type="number" name="number" class="input-qtd" placeholder="0" min="0">
+                        </td>
+                        <td>
+                            <input type="text" class="input-price" id="priceInput" oninput="formatPrice(this)" maxlength="10"
+                            placeholder="0,01">
+                        </td>
                         <td>
                             <label class="container">
                             <input type="checkbox" checked="checked">
@@ -65,20 +84,44 @@
                             </label>
                         </td>
                     </tr>
+                    
+                    <div class="linha-dinamica">
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined remove-produto">
+                                    remove_circle
+                                </span>
+                            </td>
+                            <td>
+                                <input type="text" name="text" class="input-produto" placeholder="Digite o nome..." maxlength="18">
+                            </td>
+                            <td>
+                                <input type="number" name="number" class="input-qtd" placeholder="0" min="0">
+                            </td>
+                            <td>
+                                <input type="text" class="input-price" id="priceInput" oninput="formatPrice(this)" maxlength="10"
+                                placeholder="0,01">
+
+                            </td>
+                            <td>
+                                <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <div class="checkmark"></div>
+                                </label>
+                            </td>
+                        </tr>
+                    </div>
                     <tr>
                         <td>
-                            <span class="material-symbols-outlined add-produto">
+                            <span onclick="gerarLinha()" class="material-symbols-outlined add-produto">
                                 add_circle
                             </span>
                         </td>
-                        <td>Leite</td>
-                        <td>1</td>
-                        <td>12,80</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>
-                            <label class="container">
-                            <input type="checkbox" checked="checked">
-                            <div class="checkmark"></div>
-                            </label>
+                            
                         </td>
                     </tr>
                     
