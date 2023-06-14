@@ -1,6 +1,5 @@
 const produtos = document.querySelector('.produtos');
 const produtoLinha = document.querySelector('.produto-linha');
-const linhaDinamica = document.querySelector('.linha-dinamica');
 
 const addProduto = document.querySelector('.add-produto');
 const removeProduto = document.querySelector('.remove-produto');
@@ -19,11 +18,15 @@ var priceInput = document.getElementById('priceInput');
 // Adiciona e remove produtos
 addProduto.addEventListener('click', () => {
     alert('Adicionou');
-})
+});
 
 removeProduto.addEventListener('click', () => {
     alert('Removeu');
-})
+});
+
+
+
+
 
 
 

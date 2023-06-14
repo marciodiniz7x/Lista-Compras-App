@@ -37,9 +37,9 @@ thead {
     height: 600px;
 }
 
-table {
+.table {
 
-    margin-top: -50px;
+    margin-top: -20px;
     padding: 10px;
 
 }
