@@ -27,7 +27,7 @@ thead {
 }
 
 .interface {
-    border: 15px solid #666686;
+    border: 15px solid #3d3d7ea2;
     border-radius: 55px;
     display: flex;
     flex-direction: column;
@@ -38,9 +38,9 @@ thead {
     margin-top: 10px;
     margin-left: 50%;
     transform: translateX(-50%);
-    box-shadow: 2px 2px 20px 10px rgb(183, 183, 183);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    box-shadow: 2px 2px 20px 10px #3d3d7e6c;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .table-body {
@@ -255,4 +255,37 @@ th {
     border: solid white;
     border-width: 0 0.15em 0.15em 0;
     transform: rotate(45deg);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.5em;
+    z-index: -99;
+
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #666686;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #414181;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #414181;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }

@@ -1,6 +1,6 @@
 const produtos = document.querySelector('.produtos');
 const produtoLinha = document.querySelector('.produto-linha');
-
+const botoes = document.querySelector('.botoes')
 const addProduto = document.querySelector('.add-produto');
 const removeProduto = document.querySelector('.remove-produto');
 
@@ -99,18 +99,3 @@ removeProduto.addEventListener('click', () => {
         parentElement.removeChild(lastChild);
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
