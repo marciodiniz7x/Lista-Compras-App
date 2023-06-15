@@ -117,8 +117,8 @@ th {
 /* Input Produto */
 .input-produto {
     border: none;
-    padding: 0.5rem;
-    font-size: 1.3em;
+    padding: 0.8rem;
+    font-size: 1em;
     text-align: center;
     border-radius: 1rem;
     background: #e8e8e8;
@@ -142,8 +142,8 @@ th {
 .input-qtd {
 
     border: none;
-    padding: 0.5rem;
-    font-size: 1.3em;
+    padding: 0.8rem;
+    font-size: 1em;
     text-align: center;
     border-radius: 1rem;
     background: #e8e8e8;
@@ -167,8 +167,8 @@ th {
 .input-price {
 
     border: none;
-    padding: 0.5rem;
-    font-size: 1.3em;
+    padding: 0.8rem;
+    font-size: 1em;
     text-align: center;
     border-radius: 1rem;
     background: #e8e8e8;
@@ -300,6 +300,21 @@ th {
     .interface {
         border: none;
         box-shadow: none;
+    }
+
+    .input-produto {
+        padding: 0.5rem;
+        font-size: 1.3em;
+    }
+
+    .input-qtd {
+        padding: 0.5rem;
+        font-size: 1.3em;
+    }
+
+    .input-price {
+        padding: 0.5rem;
+        font-size: 1.3em;
     }
 }
     

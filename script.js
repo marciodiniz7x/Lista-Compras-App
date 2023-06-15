@@ -59,12 +59,19 @@ addProduto.addEventListener('click', () => {
         const inputPrice = document.createElement('input');
         inputPrice.setAttribute('type', 'text');
         inputPrice.classList.add('input-price');
-        inputPrice.setAttribute('id', 'priceInput');
-        inputPrice.setAttribute('oninput', 'formatPrice(this)');
         inputPrice.setAttribute('maxlength', '10');
         inputPrice.setAttribute('placeholder', '0,01');
         tdPrice.appendChild(inputPrice);
         tr.appendChild(tdPrice);
+
+        // Adicionar o ouvinte de eventos input para formatar o preço em tempo real
+        inputPrice.addEventListener('input', function(event) {
+        var value = event.target.value.replace(',', '');
+        var cents = value.slice(-2);
+        var reais = value.slice(0, -2);
+
+        event.target.value = cents ? reais + ',' + cents : '';
+        });
 
         // Criar o elemento <td> para o checkbox
         const tdCheckbox = document.createElement('td');
