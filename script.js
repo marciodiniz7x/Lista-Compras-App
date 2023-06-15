@@ -18,10 +18,11 @@ var priceInput = document.getElementById('priceInput');
 // Defina a quantidade desejada de cópias
 var quantidadeCopias = 1;
 
-addProduto.addEventListener('click', () => {
-    
-    console.log(quantidadeCopias);
+var contadorCopias = 1;
 
+addProduto.addEventListener('click', () => {
+
+    contadorCopias++
     // Selecione o elemento pai onde deseja adicionar as cópias das divs
     const parentElement = document.querySelector('.table');
 
@@ -84,18 +85,29 @@ addProduto.addEventListener('click', () => {
 
     }
 
+    addProduto.scrollIntoView({ behavior: "smooth" });
+
 });
 
 removeProduto.addEventListener('click', () => {
-    // Selecione o elemento pai onde as divs foram adicionadas
-    const parentElement = document.querySelector('.table');
+    
+    
+    if (contadorCopias > 1) {
 
-    // Selecione o último elemento filho (última div adicionada)
-    const lastChild = parentElement.lastElementChild;
+        contadorCopias--
+        // Selecione o elemento pai onde as divs foram adicionadas
+        const parentElement = document.querySelector('.table');
 
-    // Verifique se há algum elemento filho antes de remover
-    if (lastChild) {
-        // Remova o último elemento filho
-        parentElement.removeChild(lastChild);
+        // Selecione o último elemento filho (última div adicionada)
+        const lastChild = parentElement.lastElementChild;
+
+        // Verifique se há algum elemento filho antes de remover
+        if (lastChild) {
+            // Remova o último elemento filho
+            parentElement.removeChild(lastChild);
+        }
+
     }
 });
+  
+  
