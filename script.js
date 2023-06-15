@@ -38,7 +38,7 @@ addProduto.addEventListener('click', () => {
         inputName.setAttribute('type', 'text');
         inputName.setAttribute('name', 'text');
         inputName.classList.add('input-produto');
-        inputName.setAttribute('placeholder', 'Digite o nome...');
+        inputName.setAttribute('placeholder', 'Digite...');
         inputName.setAttribute('maxlength', '18');
         tdName.appendChild(inputName);
         tr.appendChild(tdName);
